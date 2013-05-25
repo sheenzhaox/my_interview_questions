@@ -93,24 +93,11 @@ A: Yes. The ANSI committee added the bool intrinsic type and its true and false 
 
 ##[My Interview Questions](http://codingproblem.blogspot.com.au/2011/01/my-interview-questions.html)
 
-by ANAND RAI  MAY 25, 2013
-
-www.cplusplus.com
-
-http://www.geeksforgeeks.org
-
-http://www.java2s.com
-
-http://c-faq.com
-
 #### what is copy constructor, and where it's require?
 
-A copy constructor is a special constructor in the C++ programming language used to create a new object as a copy of an existing object. The first argument of such a constructor is a reference to an object of the same type as is being constructed (const or non-const), which might be followed by parameters of any type (all having default values).
-
-Normally the compiler automatically creates a copy constructor for each class (known as a default copy constructor) but for special cases the programmer creates the copy constructor, known as a user-defined copy constructor. In such cases, the compiler does not create one.
-
+A copy constructor is a special constructor in the C++ programming language used to create a new object as a copy of an existing object. The first argument of such a constructor is a reference to an object of the same type as is being constructed (const or non-const), which might be followed by parameters of any type (all having default values).<br />
+Normally the compiler automatically creates a copy constructor for each class (known as a default copy constructor) but for special cases the programmer creates the copy constructor, known as a user-defined copy constructor. In such cases, the compiler does not create one.<br />
 A user-defined copy constructor is generally needed when an object owns pointers or non-shareable references, such as to a file, in which case a destructor and an assignment operator should also be written (Rule of three).
-
 ```c++
 X (const X& copy_from_me);
 X (X& copy_from_me);
@@ -119,9 +106,7 @@ X (volatile X& copy_from_me);
 X (const X& copy_from_me, int = 10);
 X (const X& copy_from_me, double = 1.0, int = 40);
 ```
-
 The following cases may result in a call to a copy constructor:
-
 * When an object is returned by value
 * When an object is passed (to a function) by value as an argument
 * When an object is thrown
@@ -132,26 +117,18 @@ These cases are collectively called copy-initialization and are equivalent to:``
 
 The copy assignment operator differs from the copy constructor in that it must clean up the data members of the assignment's target (and correctly handle self-assignment) whereas the copy constructor assigns values to uninitialized data members.
 ```C++
-My_Array first;                // initialization by default constructor
-My_Array second(first);   // initialization by copy constructor
+My_Array first;             // initialization by default constructor
+My_Array second(first);     // initialization by copy constructor
 My_Array third = first;     // Also initialization by copy constructor
-second = third;                 // assignment by copy assignment operator
+second = third;             // assignment by copy assignment operator
 ```
 
+####What 's difference between calloc and malloc ?
 
-
-what 's difference between calloc and malloc ?
-
-Last 14 Mar 2011(004)
-
-http://c-faq.com/malloc/calloc.html
-
-calloc(m, n) is essentially equivalent to
-
-
-
+```C++ calloc(m, n)``` is essentially equivalent to
+```C++
 p = malloc(m * n);
-
+```
 +
 memset(p, 0, m * n);
 
