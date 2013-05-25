@@ -17,10 +17,11 @@ Q: How many ways are there to initialize an int with a constant?
 A: Two.
 
 There are two formats for initializers in C++ as shown in the example that follows. The first format uses the traditional C notation. The second format uses constructor notation.
-
+```C++
 int foo = 123;
 
 int bar (123);
+```
 
 Q: How does throwing and catching exceptions differ from using setjmp and longjmp?
 
