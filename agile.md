@@ -9,13 +9,11 @@ This [page](http://www.questions-interviews.com/software-development-testing-mod
 
 **What is Agile?**
 
-Agile methodology is an approach to project management, typically used in software development.
-It helps teams respond to the unpredictability of building software through incremental, iterative work cadences,
-known as sprints. This methodology that inspired it: waterfall, or traditional sequential development.
+Agile methodology is an approach to project management, typically used in software development. It helps teams respond to the unpredictability of building software through incremental, iterative work cadences, known as sprints. This methodology that inspired it: waterfall, or traditional sequential development.
 
 **Why Agile?**
 
-Agile -development- methodology attempts to provide many opportunities to assess the direction of a project throughout the development lifecycle. Agile methodology could be described as “iterative” and “incremental.” In waterfall, development teams only have one chance to get each aspect of a project right. In an agile paradigm, every aspect of development — requirements, design, etc. — is continually revisited throughout the lifecycle. When a team stops and re-evaluates the direction of a project every two weeks, there’s always time to steer it in another direction.
+Agile development methodology attempts to provide many opportunities to assess the direction of a project throughout the development lifecycle. Agile methodology could be described as “_iterative_” and “#incremental#.” In waterfall, development teams only have one chance to get each aspect of a project right. In an agile paradigm, every aspect of development — requirements, design, etc. — is continually revisited throughout the lifecycle. When a team stops and re-evaluates the direction of a project every two weeks, there’s always time to steer it in another direction.
 
 **What is Agile software development?**
 
