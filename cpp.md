@@ -11,7 +11,6 @@ Q: How many ways are there to initialize an int with a constant?<br />
 A: There are ***two*** formats for initializers in C++ as shown in the example that follows. The first format uses the traditional C notation. The second format uses constructor notation.
 ```C++
 int foo = 123;
-
 int bar (123);
 ```
 
@@ -31,7 +30,7 @@ Q: What is a conversion constructor?<br />
 A: A constructor that accepts one argument of a different type.
 
 Q: What is the difference between a copy constructor and an overloaded assignment operator?<br />
-A: A copy constructor constructs a new object by using the content of the argument object. An overloaded assignment operator assigns the contents of an existing object to another existing object of the same class.
+A: A **copy constructor** constructs a new object by using the content of the argument object. An overloaded assignment operator assigns the contents of an existing object to another existing object of the same class.
 
 Q: When should you use multiple inheritance?<br />
 A: There are three acceptable answers: "Never," "Rarely," and "When the problem domain cannot be accurately modeled any other way."
@@ -52,22 +51,20 @@ Q: What is an explicit constructor?<br />
 A: A conversion constructor declared with the explicit keyword. The compiler does not use an explicit constructor to implement an implied conversion of types. It’s purpose is reserved explicitly for construction.
 
 Q: What is the Standard Template Library?<br />
-A: A library of container templates approved by the ANSI committee for inclusion in the standard C++ specification.
-
-A programmer who then launches into a discussion of the generic programming model, iterators, allocators, algorithms, and such, has a higher than average understanding of the new technology that STL brings to C++ programming.
+A: A library of container templates approved by the ANSI committee for inclusion in the standard C++ specification.  
+  A programmer who then launches into a discussion of the generic programming model, iterators, allocators, algorithms, and such, has a higher than average understanding of the new technology that STL brings to C++ programming.
 
 Q: Describe run-time type identification.<br />
 A: The ability to determine at run time the type of an object by using the typeid operator or the dynamic_cast operator.
 
 Q: What problem does the namespace feature solve?<br />
-A: Multiple providers of libraries might use common global identifiers causing a name collision when an application tries to link with two or more such libraries. The namespace feature surrounds a library’s external declarations with a unique namespace that eliminates the potential for those collisions.
-
-This solution assumes that two library vendors don’t use the same namespace identifier, of course.
+A: Multiple providers of libraries might use common global identifiers causing a name collision when an application tries to link with two or more such libraries. The namespace feature surrounds a library’s external declarations with a unique namespace that eliminates the potential for those collisions.  
+  This solution assumes that two library vendors don’t use the same namespace identifier, of course.
 
 Q: Are there any new intrinsic (built-in) data types?<br />
 A: Yes. The ANSI committee added the bool intrinsic type and its true and false value keywords.
 
-
+* * *
 
 ##[My Interview Questions](http://codingproblem.blogspot.com.au/2011/01/my-interview-questions.html)
 
