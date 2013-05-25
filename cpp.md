@@ -17,10 +17,7 @@ int bar (123);
 Q: How does throwing and catching exceptions differ from using setjmp and longjmp?<br />
 A: The throw operation calls the destructors for automatic objects instantiated since entry to the try block.
 
-Q: What is your reaction to this line of code?
-```C++
-delete this;
-```
+Q: What is your reaction to this line of code? ```C++ delete this;```
 A: It’s not a good practice.
 
 Q: What is a default constructor?<br />
@@ -64,14 +61,15 @@ A: Multiple providers of libraries might use common global identifiers causing a
 Q: Are there any new intrinsic (built-in) data types?<br />
 A: Yes. The ANSI committee added the bool intrinsic type and its true and false value keywords.
 
-* * *
 
+
+* * *
 ##[My Interview Questions](http://codingproblem.blogspot.com.au/2011/01/my-interview-questions.html)
 
 #### what is copy constructor, and where it's require?
 
-A copy constructor is a special constructor in the C++ programming language used to create a new object as a copy of an existing object. The first argument of such a constructor is a reference to an object of the same type as is being constructed (const or non-const), which might be followed by parameters of any type (all having default values).
-Normally the compiler automatically creates a copy constructor for each class (known as a default copy constructor) but for special cases the programmer creates the copy constructor, known as a user-defined copy constructor. In such cases, the compiler does not create one.
+A copy constructor is a special constructor in the C++ programming language used to create a new object as a copy of an existing object. The first argument of such a constructor is a reference to an object of the same type as is being constructed (const or non-const), which might be followed by parameters of any type (all having default values).  
+Normally the compiler automatically creates a copy constructor for each class (known as a default copy constructor) but for special cases the programmer creates the copy constructor, known as a user-defined copy constructor. In such cases, the compiler does not create one.  
 A user-defined copy constructor is generally needed when an object owns pointers or non-shareable references, such as to a file, in which case a destructor and an assignment operator should also be written (Rule of three).
 ```c++
 X (const X& copy_from_me);
@@ -88,8 +86,7 @@ The following cases may result in a call to a copy constructor:
 * When an object is caught
 * When an object is placed in a brace-enclosed initializer list
 
-These cases are collectively called copy-initialization and are equivalent to:```C++ T x = a;```
-
+These cases are collectively called copy-initialization and are equivalent to:```C++ T x = a;```  
 The copy assignment operator differs from the copy constructor in that it must clean up the data members of the assignment's target (and correctly handle self-assignment) whereas the copy constructor assigns values to uninitialized data members.
 ```C++
 My_Array first;             // initialization by default constructor
@@ -98,51 +95,17 @@ My_Array third = first;     // Also initialization by copy constructor
 second = third;             // assignment by copy assignment operator
 ```
 
-####What 's difference between calloc and malloc ?
-
-```C++ calloc(m, n)``` is essentially equivalent to
-```C++
-p = malloc(m * n);
-```
-+
-memset(p, 0, m * n);
-
-
-
-There is no important difference between the two other than the number of arguments and the zero fill.
-
-Malloc:
-
-Allocates a block of size bytes of memory, returning a pointer to the beginning of the block.
-
-The content of the newly allocated block of memory is not initialized, remaining with indeterminate values.
-
-Calloc:
-
-Allocate space for array in memory
-
-Allocates a block of memory for an array of num elements, each of them size bytes long, and initializes all its bits to zero.
-
-The effective result is the allocation of an zero-initialized memory block of (num * size) bytes.
-
-
-
-Last 16 Mar 2011(002)
+####What is C++ reference?
 
 A reference variable is an alias, that is, another name for an already existing variable. Once a reference is initialized with a variable, either the variable name or the reference name may be used to refer to the variable.
-
-C++ References vs Pointers:
+#####C++ References vs Pointers:
 
 References are often confused with pointers but three major differences between references and pointers are:
+- You cannot have NULL references. You must always be able to assume that a reference is connected to a legitimate piece of storage.
+- Once a reference is initialized to an object, it cannot be changed to refer to another object. Pointers can be pointed to another object at any time.
+- A reference must be initialized when it is created. Pointers can be initialized at any time.
 
-
-You cannot have NULL references. You must always be able to assume that a reference is connected to a legitimate piece of storage.
-
-Once a reference is initialized to an object, it cannot be changed to refer to another object. Pointers can be pointed to another object at any time.
-
-A reference must be initialized when it is created. Pointers can be initialized at any time.
-
-Creating References in C++:
+#####Creating References in C++:
 
 Think of a variable name as a label attached to the variable's location in memory. You can then think of a reference as a second label attached to that memory location. Therefore, you can access the contents of the variable through either the original variable name or the reference. For example, suppose we have the following example:
 
