@@ -15,13 +15,13 @@ known as sprints. This methodology that inspired it: waterfall, or traditional s
 
 **Why Agile?**
 
-Agile development methodology attempts to provide many opportunities to assess the direction of a project throughout the development lifecycle. Agile methodology could be described as “iterative” and “incremental.” In waterfall, development teams only have one chance to get each aspect of a project right. In an agile paradigm, every aspect of development — requirements, design, etc. — is continually revisited throughout the lifecycle. When a team stops and re-evaluates the direction of a project every two weeks, there’s always time to steer it in another direction.
+Agile __development__ methodology attempts to provide many opportunities to assess the direction of a project throughout the development lifecycle. Agile methodology could be described as “iterative” and “incremental.” In waterfall, development teams only have one chance to get each aspect of a project right. In an agile paradigm, every aspect of development — requirements, design, etc. — is continually revisited throughout the lifecycle. When a team stops and re-evaluates the direction of a project every two weeks, there’s always time to steer it in another direction.
 
 **What is Agile software development?**
 
 Adaptable software creation, also known as agile software development. Agile development is a style of software development that emphasizes customer satisfaction through continuous delivery of functional software. Based on a variety of iterative development disciplines including extreme programming (XP), agile methods put developers to work in small teams to tight budgets and short timescales. In contrast to traditional software development methods, agile developers liaise continuously with business clients, aiming to deliver working software as frequently as every two weeks during a project, and welcome changes to the requirement in response to evolving business needs
 
-**What are the Advantages of Agile Methodology?
+**What are the Advantages of Agile Methodology?**
 
 * Customer satisfaction by rapid, continuous delivery of useful software
 * Working software is delivered frequently (weeks rather than months)
