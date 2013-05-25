@@ -95,14 +95,15 @@ A: Yes. The ANSI committee added the bool intrinsic type and its true and false 
 
 by ANAND RAI  MAY 25, 2013
 
-
-You can visit below wbsite for your Interview preparation.
 www.cplusplus.com
+
 http://www.geeksforgeeks.org
+
 http://www.java2s.com
+
 http://c-faq.com
 
-* what is copy constructor, and where it's require?
+# what is copy constructor, and where it's require?
 
 A copy constructor is a special constructor in the C++ programming language used to create a new object as a copy of an existing object. The first argument of such a constructor is a reference to an object of the same type as is being constructed (const or non-const), which might be followed by parameters of any type (all having default values).
 
@@ -112,43 +113,30 @@ A user-defined copy constructor is generally needed when an object owns pointers
 
 ```c++
 X (const X& copy_from_me);
-
 X (X& copy_from_me);
-
 X (const volatile X& copy_from_me);
-
 X (volatile X& copy_from_me);
-
 X (const X& copy_from_me, int = 10);
-
 X (const X& copy_from_me, double = 1.0, int = 40);
 ```
 
 The following cases may result in a call to a copy constructor:
 
+* When an object is returned by value
+* When an object is passed (to a function) by value as an argument
+* When an object is thrown
+* When an object is caught
+* When an object is placed in a brace-enclosed initializer list
 
-When an object is returned by value
-
-When an object is passed (to a function) by value as an argument
-
-When an object is thrown
-
-When an object is caught
-
-When an object is placed in a brace-enclosed initializer list
-
-These cases are collectively called copy-initialization and are equivalent to:T x = a;
+These cases are collectively called copy-initialization and are equivalent to:```C++ T x = a;```
 
 The copy assignment operator differs from the copy constructor in that it must clean up the data members of the assignment's target (and correctly handle self-assignment) whereas the copy constructor assigns values to uninitialized data members.
-
+```C++
 My_Array first;                // initialization by default constructor
-
 My_Array second(first);   // initialization by copy constructor
-
 My_Array third = first;     // Also initialization by copy constructor
-
 second = third;                 // assignment by copy assignment operator
-
+```
 
 
 
