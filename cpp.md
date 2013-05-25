@@ -8,9 +8,7 @@ Q: What are the differences between a C++ struct and C++ class?<br />
 A: The default member and base-class access specifiers are different.
 
 Q: How many ways are there to initialize an int with a constant?<br />
-A: Two.
-
-There are two formats for initializers in C++ as shown in the example that follows. The first format uses the traditional C notation. The second format uses constructor notation.
+A: There are *_two_* formats for initializers in C++ as shown in the example that follows. The first format uses the traditional C notation. The second format uses constructor notation.
 ```C++
 int foo = 123;
 
@@ -23,7 +21,7 @@ A: The throw operation calls the destructors for automatic objects instantiated 
 Q: What is your reaction to this line of code?
 ```C++
 delete this;
-```<br />
+```
 A: It’s not a good practice.
 
 Q: What is a default constructor?<br />
