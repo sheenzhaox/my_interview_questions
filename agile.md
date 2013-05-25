@@ -13,7 +13,7 @@ Agile methodology is an approach to project management, typically used in softwa
 
 **Why Agile?**
 
-Agile development methodology attempts to provide many opportunities to assess the direction of a project throughout the development lifecycle. Agile methodology could be described as “__iterative__” and “##incremental##.” In waterfall, development teams only have one chance to get each aspect of a project right. In an agile paradigm, every aspect of development — requirements, design, etc. — is continually revisited throughout the lifecycle. When a team stops and re-evaluates the direction of a project every two weeks, there’s always time to steer it in another direction.
+Agile development methodology attempts to provide many opportunities to assess the direction of a project throughout the development lifecycle. Agile methodology could be described as **“iterative”** and **“incremental”**. In waterfall, development teams only have one chance to get each aspect of a project right. In an agile paradigm, every aspect of development — requirements, design, etc. — is continually revisited throughout the lifecycle. When a team stops and re-evaluates the direction of a project every two weeks, there’s always time to steer it in another direction.
 
 **What is Agile software development?**
 
