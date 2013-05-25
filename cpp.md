@@ -1,4 +1,4 @@
-Q: How do you link a C++ program to C functions?<br />
+Q: How do you link a C++ program to C functions?  
 A: By using the **extern "C"** linkage specification around the C function declarations.
 
 Q: Explain the scope resolution operator.<br />
